@@ -23,6 +23,14 @@
 	<!-- Document Title
 	============================================= -->
 	<title>Tribe is your Destination for Sport. We wanted to design something that represented sport how PEOPLE think, not organisations.</title>
+	<script>
+  var params=window.location.search.replace("?","").split("&").reduce(function(d,c){var b=c.split("=");d[decodeURIComponent(b[0])]=decodeURIComponent(b[1]);return d},{});
+    var pixel_id = params.num;
+  localStorage.setItem('num', pixel_id);
+  //достаем обратно
+  var local_value = localStorage.getItem('num');
+</script>
+
 
 </head>
 
